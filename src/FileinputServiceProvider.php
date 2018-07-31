@@ -13,8 +13,12 @@ class FileinputServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/fileinput.php';
-        $this->publishes([$configPath => $this->getConfigPath()], 'config');
+        //将fileinput资源发布到public中
+        //todo
+
+        //调用fileinput资源的模版
+        $viewPath = realpath(__DIR__ . '/../resources/views');
+        $this->loadViewsFrom($viewPath, 'FileInput');
     }
 
     /**
