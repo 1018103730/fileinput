@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Luerdog\Fileinput;
 
 use Illuminate\Support\ServiceProvider;
 
